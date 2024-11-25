@@ -1,0 +1,33 @@
+name: mundo_verde # Nome do aplicativo
+description: "A new Flutter project."
+
+publish_to: 'none' # Apenas para uso local
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    url_launcher: ^6.1.7
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/logo.png
+    - lib/assets/bghome.png
+    - lib/assets/fabrica.png
+    - lib/assets/folhas.png
+    - lib/assets/telaverde.png
+    - lib/assets/telaverde.png
+    - lib/assets/carinhodeleite.png
