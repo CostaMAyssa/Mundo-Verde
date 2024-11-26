@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mundo_verde/telas/oficina_sustentavel_screen.dart';
- // Certifique-se de ajustar o caminho correto
+// Certifique-se de ajustar o caminho correto
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -142,12 +142,13 @@ class HomeScreen extends StatelessWidget {
                       crossAxisSpacing: 16, // Espaçamento horizontal
                       mainAxisSpacing: 16, // Espaçamento vertical
                       shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(), // Desativa o scroll do GridView
+                      physics:
+                          const NeverScrollableScrollPhysics(), // Desativa o scroll do GridView
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       children: [
                         _buildProjectCard(
                           "Finn",
-                          "Transforme suas criações em sorrisos: doe brinquedos feitos por você para instituições carentes.",
+                          "Cadastre sua instituição e lance desafios para engajar nossos usuários na criação de objetos essenciais para atender a nossa comunidade",
                           ["Doação", "Parcerias"],
                           "lib/assets/bghome.png",
                         ),
@@ -205,7 +206,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             if (assetPath.isNotEmpty) // Exibe a imagem se ela existir
               AspectRatio(
-                aspectRatio: 16 / 9, // Define a proporção da imagem (largura / altura)
+                aspectRatio:
+                    16 / 9, // Define a proporção da imagem (largura / altura)
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(

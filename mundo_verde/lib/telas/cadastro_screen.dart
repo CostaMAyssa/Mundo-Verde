@@ -82,6 +82,31 @@ class CadastroScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
 
+                    // Campo "Idade"
+                    TextField(
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        labelText: 'Idade',
+                        labelStyle: const TextStyle(color: Color(0xFF4CAF50)),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(
+                            color: Color(0xFF4CAF50), // Verde
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(
+                            color: Color(0xFF4CAF50), // Verde
+                            width: 2.0,
+                          ),
+                        ),
+                        filled: true,
+                        fillColor: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
                     // Campo "Senha"
                     TextField(
                       obscureText: true,
@@ -104,6 +129,47 @@ class CadastroScreen extends StatelessWidget {
                         filled: true,
                         fillColor: Colors.white,
                       ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Dropdown "Grau de Complexidade"
+                    DropdownButtonFormField<String>(
+                      decoration: InputDecoration(
+                        labelText: 'Grau de Complexidade',
+                        labelStyle: const TextStyle(color: Color(0xFF4CAF50)),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(
+                            color: Color(0xFF4CAF50), // Verde
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(
+                            color: Color(0xFF4CAF50), // Verde
+                            width: 2.0,
+                          ),
+                        ),
+                        filled: true,
+                        fillColor: Colors.white,
+                      ),
+                      items: const [
+                        DropdownMenuItem(
+                          value: 'Fácil',
+                          child: Text('Fácil'),
+                        ),
+                        DropdownMenuItem(
+                          value: 'Médio',
+                          child: Text('Médio'),
+                        ),
+                        DropdownMenuItem(
+                          value: 'Difícil',
+                          child: Text('Difícil'),
+                        ),
+                      ],
+                      onChanged: (value) {
+                        // Lógica ao selecionar um grau de complexidade
+                      },
                     ),
                     const SizedBox(height: 24),
 

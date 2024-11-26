@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mundo_verde/telas/cadastro_screen.dart';
 
-
 void main() {
   runApp(const MundoVerdeApp());
 }
